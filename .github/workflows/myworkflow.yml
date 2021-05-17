@@ -34,6 +34,7 @@ jobs:
         run: |
           cd ${{ github.workspace }}
           mvn package
+          
       - run: echo "Job status after building is ${{ job.status }}."
 
       - name: AWS CodeGuru Reviewer Scanner
