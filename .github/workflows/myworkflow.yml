@@ -5,10 +5,12 @@ jobs:
   My-Action:
     runs-on: ubuntu-latest
     steps:
+    
       - name: Checkout repository
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
+          
       # Refer to Step 1 for more details
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
