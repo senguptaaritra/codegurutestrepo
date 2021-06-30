@@ -1,5 +1,5 @@
 
-name: My CodeGuru Test
+name: My CodeGuru Tests
 on: [pull_request, push]
 jobs:
   My-Action:
