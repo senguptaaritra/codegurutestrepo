@@ -39,7 +39,7 @@ jobs:
       - run: echo "Job status after building is ${{ job.status }}."
 
       - name: AWS CodeGuru Reviewer Scanner
-        uses: aws-actions/codeguru-reviewer@v1
+        uses: aws-actions/codeguru-reviewer
         if: ${{ always() }} 
         with:
           src_path: .        # Repository root 
