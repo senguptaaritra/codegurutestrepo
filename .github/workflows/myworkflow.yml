@@ -6,10 +6,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     
-      # - name: Checkout repository
-      #  uses: actions/checkout@v2
-      #  with:
-      #    fetch-depth: 0
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
           
           
       # Refer to Step 1 for more details
@@ -39,7 +39,7 @@ jobs:
       - run: echo "Job status after building is ${{ job.status }}."
 
       - name: AWS CodeGuru Reviewer Scanner
-        uses: aws-actions/codeguru-reviewer
+        uses: aws-actions/codeguru-reviewer@v1.1
         if: ${{ always() }} 
         with:
           src_path: .        # Repository root 
