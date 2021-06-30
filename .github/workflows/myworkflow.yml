@@ -1,5 +1,5 @@
 
-name: My First GitHub Action
+name: My Guru Test
 on: [pull_request, push]
 jobs:
   My-Action:
