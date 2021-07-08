@@ -22,6 +22,7 @@ public class App
 		System.out.println("Welcome to this little App!");
 		good();
 		bad();
+		badTwo();
 		System.exit(0);
 	}
 }
