@@ -117,11 +117,11 @@
                             }
                         },
                         {
-                            "id": "Security Issues",
-                            "name": "Security Issues",
+                            "id": "Security Issues New",
+                            "name": "Security Issues New",
                             "shortDescription": {
-                                "text": "Security Issues",
-                                "markdown": "Security Issues"
+                                "text": "Security Issues New",
+                                "markdown": "Security Issues New"
                             },
                             "help": {
                                 "text": "Security rules help you improve the security of your code by identifying risks from the top ten Open Web Application Security Project (OWASP) categories, security best practices for AWS APIs, and common Java crypto libraries. OWASP is a standard awareness document for developers and web application security.",
@@ -133,7 +133,7 @@
             },
             "results": [
                 {
-                    "ruleId": "Security Issues",
+                    "ruleId": "Security Issues New",
                     "level": "warning",
                     "locations": [
                         {
@@ -153,7 +153,7 @@
                     }
                 },
                 {
-                    "ruleId": "Security Issues",
+                    "ruleId": "Security Issues New",
                     "level": "warning",
                     "locations": [
                         {
