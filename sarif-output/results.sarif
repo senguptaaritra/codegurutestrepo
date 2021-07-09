@@ -117,11 +117,11 @@
                             }
                         },
                         {
-                            "id": "Security Issues New",
-                            "name": "Security Issues New",
+                            "id": "Security Issues Ext",
+                            "name": "Security Issues Ext",
                             "shortDescription": {
-                                "text": "Security Issues New",
-                                "markdown": "Security Issues New"
+                                "text": "Security Issues Ext",
+                                "markdown": "Security Issues Ext"
                             },
                             "help": {
                                 "text": "Security rules help you improve the security of your code by identifying risks from the top ten Open Web Application Security Project (OWASP) categories, security best practices for AWS APIs, and common Java crypto libraries. OWASP is a standard awareness document for developers and web application security.",
@@ -133,7 +133,7 @@
             },
             "results": [
                 {
-                    "ruleId": "Security Issues New",
+                    "ruleId": "Security Issues Ext",
                     "level": "warning",
                     "locations": [
                         {
@@ -153,7 +153,7 @@
                     }
                 },
                 {
-                    "ruleId": "Security Issues New",
+                    "ruleId": "Security Issues Ext",
                     "level": "warning",
                     "locations": [
                         {
@@ -166,20 +166,47 @@
                                     "endLine": 14
                                 }
                             }
-                        },
+                        }
+                    ],
 
-			{
+
+                "codeFlows": [
+                {
+                  "threadFlows": [
+                    {
+                      "locations": [
+                        {
+                          "location": {
                             "physicalLocation": {
                                 "artifactLocation": {
                                     "uri": "src/main/java/com/guru/App.java"
                                 },
                                 "region": {
-                                    "startLine": 12,
+                                    "startLine": 14,
+                                    "endLine": 14
+                                }
+                            }                     
+                        },
+                        {
+                            "location": {
+                                "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "src/main/java/com/guru/App.java"
+                                },
+                                "region": {
+                                    "startLine": 11,
                                     "endLine": 13
                                 }
-                            }
-                        }
-                    ],
+                            }                      
+                         }
+
+                      ]
+                    }
+                  ]
+                }
+              ]
+
+
                     "message": {
                         "text": "It looks like your code uses a cipher object with an insecure transformation. To make your<br>code more secure, use one of the following algorithms with a built-in integrity check:<br>AES/GCM/NoPadding, or for Java 11 or newer, ChaCha20-Poly1305. Learn more about [`javax.crypto.Cipher.getInstance`](https://docs.oracle.com/javase/8/docs/api/javax/crypto/Cipher.html#getInstance-java.lang.String-).<br><br><br>Relevant Locations:<br><br>* src/main/java/com/guru/App.java, line: 14 <br><br>    * src/main/java/com/guru/App.java, line: 14 (The constant value)<br><br>"
                     }
