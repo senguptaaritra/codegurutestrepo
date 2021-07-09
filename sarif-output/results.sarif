@@ -174,7 +174,7 @@
                         {
                            "locations":[
                               {
-                                 "location1":{
+                                 "location":{
                                     "physicalLocation":{
                                        "artifactLocation":{
                                           "uri":"src/main/java/com/guru/App.java"
@@ -185,7 +185,7 @@
                                        }
                                     }
                                  },
-                                 "location2":{
+                                 "location":{
                                     "message": {
                                     "text": "test message"
                                     }, 
@@ -195,7 +195,7 @@
                                        },
                                        "region":{
                                           "startLine":11,
-                                          "endLine":13
+                                          "endLine":12
                                        }
                                     }
                                  }
